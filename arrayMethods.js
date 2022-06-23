@@ -121,14 +121,14 @@ const applyTaxes = (prices, taxes) => {
 const applyDiscounts = (arr1, callback) => {
   z = []
   arr1.forEach(product => {
-      z.push(callback(product.price,product.tax))
+    z.push(callback(product.price,product.tax))
   })
   return z
 }
 
 const ordersList = applyDiscounts(orders, applyTaxes)
 
-console.log(ordersList)
+// console.log(ordersList)
 
 
 
@@ -150,8 +150,15 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 
 // CODE HERE
 
-// const gettingTotal = purchases.price 
-// const totalPopulation = populations.reduce(
-//   (previousPopulations, currentPopulations) => previousPopulations + currentPopulations,
-//   populationsAdded
-// )
+const gettingSum = (objects) => {
+  sum = 0
+  objects.forEach((product) => {
+    let price = product.price
+    sum += price
+    })
+    return sum
+  }
+
+  console.log(gettingSum(purchases))
+
+  
