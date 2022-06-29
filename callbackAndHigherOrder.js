@@ -252,6 +252,13 @@ const getUserById = (objects, id, cb) => {
 
 // CODE HERE
 
+const addingFactory = (x) => {
+    function newFunction(y) {
+      return x + y
+    }
+    return newFunction
+}
+
 /*
   Now that you have addingFactory, you can create other
   functions from it. 
@@ -266,6 +273,9 @@ const getUserById = (objects, id, cb) => {
 
 // CODE HERE
 
+addTen = addingFactory(10)
+
+
 /*
   Now the inner function is stored in the addTen variable! 
 
@@ -277,6 +287,8 @@ const getUserById = (objects, id, cb) => {
 */
 
 // CODE HERE
+
+console.log(addTen(8))
 
 /*
   Let's make another function from the addingFactory. 
@@ -290,3 +302,6 @@ const getUserById = (objects, id, cb) => {
 */
 
 // CODE HERE
+
+favNumber = addingFactory(9)
+console.log(favNumber(1603))

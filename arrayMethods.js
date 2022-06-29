@@ -1,6 +1,6 @@
 /*
     You can check your answers in this file
-    by console.logging the variables that are 
+    by console.logging the variables that are
     storing the results of your function calls.
 */
 
@@ -32,7 +32,7 @@ const evenNumbers = mixedNumbers.filter(num => num % 2 === 0)
 Use the map method on the prices array to calculate a new array of post-tax prices.
 Use a 7% tax rate.
 Math reminder! To calculate the price after tax, multiply the price by 1 plus the taxRate as a decimal.
-Example: if tax is 7%, the price afterTax could be calculated like this: afterTax = price * 1.07) 
+Example: if tax is 7%, the price afterTax could be calculated like this: afterTax = price * 1.07)
 The map function also takes a callback with the parameters
 function(element, index, wholeArray){}  Function Form
 (element, index, wholeArray)=>{}    Arrow Form
@@ -160,5 +160,3 @@ const gettingSum = (objects) => {
   }
 
   console.log(gettingSum(purchases))
-
-  
